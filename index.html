@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forest Fire</title>
+    <link href="fire.css" rel="stylesheet"/>
+    <script src="fire.js"></script>
+  </head>
+  <body>
+    <h1>Forest Fire</h1>
+    <canvas id="canvas"></canvas>
+    <h2>Model Description</h2>
+    <p>
+      Trees are arranged in a 2D grid with a boundary of burnt
+      trees along the outside. A random tree is initially caught on fire.
+      Thereafter, at each time step, each non-burning tree checks
+      each of its neighbors to the north, east, south, and west to
+      see if any are burning. If any are burning, the tree who is
+      checking will be burning with some random chance in the next
+      time step.
+    </p>
+    <h2>Controls</h2>
+    <button id="button-play-pause" onclick="play();">Play</button>
+    <button id="button-step"  onclick="step();">Step</button>
+    <button id="button-reset" onclick="reset();">Reset</button>
+    <h2>Author</h2>
+    Aaron Weeden, The Shodor Education Foundation, Inc., 2016&ndash;2018
+  </body>
+</html>
